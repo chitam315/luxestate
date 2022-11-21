@@ -1,0 +1,51 @@
+// css footer
+
+footer{
+    background-color: #050505;
+
+    .container{
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .footer__copyright{
+            color: #b0b0b0;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+        }
+
+        .footer__logo{
+            height: 17px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            img{
+                height: 17px;
+            }
+        }
+
+        .footer__backtotop{
+            color: #b0b0b0;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+    }
+
+    @include xs{
+        .container{
+            height: 80px;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .logo{
+                position: relative;
+                left: 0;
+                transform: translate(0);
+            }
+        }
+    }
+}
